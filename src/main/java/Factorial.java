@@ -4,8 +4,10 @@ public class Factorial {
     }
 
     private static int of(int n, int acc) {
-        if (n < 2)
-            return acc;
-        return of(n - 1, acc * n);
+        while (n > 1) {
+            acc *= n;
+            n--;
+        }
+        return acc;
     }
 }
