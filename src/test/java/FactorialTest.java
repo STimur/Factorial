@@ -12,4 +12,9 @@ public class FactorialTest {
     public void two() throws Exception {
         assertEquals(2, Factorial.of(2));
     }
+
+    @Test
+    public void three() throws Exception {
+        assertEquals(6, Factorial.of(3));
+    }
 }
