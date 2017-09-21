@@ -3,28 +3,32 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class FactorialTest {
+    private void assertFactorialOf(int n, int expected) {
+        assertEquals(expected, Factorial.of(n));
+    }
+
     @Test
     public void zero() throws Exception {
-        assertEquals(1, Factorial.of(0));
+        assertFactorialOf(0, 1);
     }
 
     @Test
     public void two() throws Exception {
-        assertEquals(2, Factorial.of(2));
+        assertFactorialOf(2, 2);
     }
 
     @Test
     public void three() throws Exception {
-        assertEquals(6, Factorial.of(3));
+        assertFactorialOf(3, 6);
     }
 
     @Test
     public void four() throws Exception {
-        assertEquals(24, Factorial.of(4));
+        assertFactorialOf(4, 24);
     }
 
     @Test
     public void acceptance() throws Exception {
-        assertEquals(3_628_800, Factorial.of(10));
+        assertFactorialOf(10, 3_628_800);
     }
 }
