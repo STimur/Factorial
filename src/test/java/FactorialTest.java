@@ -22,4 +22,9 @@ public class FactorialTest {
     public void four() throws Exception {
         assertEquals(24, Factorial.of(4));
     }
+
+    @Test
+    public void acceptance() throws Exception {
+        assertEquals(3_628_800, Factorial.of(10));
+    }
 }
