@@ -17,4 +17,9 @@ public class FactorialTest {
     public void three() throws Exception {
         assertEquals(6, Factorial.of(3));
     }
+
+    @Test
+    public void four() throws Exception {
+        assertEquals(24, Factorial.of(4));
+    }
 }
